@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Admin Panel</h1>
+        <p class="lead">Login or sign up to access the admin features.</p>
+        <a class="btn btn-primary" href="{{ url_for('login') }}">Login</a>
+        <a class="btn btn-success" href="{{ url_for('signup') }}">Sign Up</a>
+    </div>
+{% endblock %}
